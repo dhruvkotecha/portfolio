@@ -1104,6 +1104,37 @@
       line-height: 1.6
     }
 
+    .ach-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .ach-list li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 13.5px;
+      color: #b5b0aa;
+      line-height: 1.5;
+    }
+
+    .ach-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--red);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    .ach-list li strong {
+      color: #dedbd6;
+      font-weight: 600;
+    }
+
     @media(max-width:1100px) {
       .ach-grid {
         grid-template-columns: repeat(2, 1fr)
@@ -1612,7 +1643,7 @@
         <div class="fam-box rv">
           <div>
             <h3 class="fam-h3">Hotel Trinity, Somnath</h3>
-            <div class="fam-role">Assistant Manager · Jun 2022 – Apr 2024</div>
+            <div class="fam-role">Assistant Manager · Jan 2025 – Feb 2025</div>
             <p class="fam-text">Contributing to our family-run hotel in Somnath provided me with an invaluable hands-on
               laboratory in business operations and customer psychology long before formal corporate internships.</p>
             <ul class="fam-points">
@@ -1632,15 +1663,15 @@
             <div class="fam-photo-wrap">
               <video class="fam-photo" id="trinityVid" poster="trinity.jpg" autoplay loop muted playsinline
                 preload="auto">
+                <source src="trinity.mp4" type="video/mp4">
                 <source src="trinity.mov" type="video/quicktime">
-                <source src="trinity.mov" type="video/mp4">
               </video>
               <div class="fam-photo-tag">Hotel Trinity · Somnath</div>
             </div>
             <div class="fam-stats">
               <div class="fam-stat-card">
-                <b>2<span>+</span></b>
-                <span>Years Hands-On Operations</span>
+                <b>2<span>M</span></b>
+                <span>Months Hands-On Operations</span>
               </div>
               <div class="fam-stat-card">
                 <b>360<span>°</span></b>
@@ -1744,9 +1775,13 @@
           <!-- Leadership -->
           <div class="ach-card rv">
             <div class="ach-num">04 / Leadership</div>
-            <h3 class="ach-title">University Captain &amp; Event Lead</h3>
-            <p class="ach-desc">Football Team Captain at Marwadi University, Volunteer Lead for LIBF Expo 2026 at
-              WeSchool, Cultural Committee Member, and School Vice Sports Captain.</p>
+            <h3 class="ach-title">Positions of Responsibility</h3>
+            <ul class="ach-list">
+              <li><strong>Volunteer Lead &amp; Member of Organising Team</strong> – LIBF Expo 2026, Mumbai</li>
+              <li><strong>Captain</strong> – Football Team, Marwadi University (2024)</li>
+              <li><strong>Member</strong> – Cultural Committee, Marwadi University (2023)</li>
+              <li><strong>Vice Sports Captain</strong> – School (2021)</li>
+            </ul>
           </div>
         </div>
       </div>
